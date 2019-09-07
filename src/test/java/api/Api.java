@@ -17,7 +17,7 @@ public class Api {
                 post("https://gorzdrav.spb.ru/api/clinic_list/").
                 then().
                 statusCode(200).
-                body("response.LPUShortName", Matchers.hasItem("Гериатр.центр Сурдо"));
+                body("response", Matchers.hasItem("Гериатр.центр Сурдо"));
 
     }
 
